@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Youtube like rate",
+  "description": "This extension who show the precentage of likes and dislikes",
+  "version":"1.0",
+  "content_scripts":[
+    {"matches":[
+      "<all_urls>"
+      ],
+    "js":["jquery-3.2.1.min.js","content.js"]
+  }],
+  "browser_action": {
+  "default_icon": "icon.png"},
+  "background": {"scripts": ["background.js"]}
+
+}
